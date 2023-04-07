@@ -1,0 +1,24 @@
+{
+  "name": "gravit",
+  "version": "1.0.0",
+  "description": "Website of the occupational medicine facility.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/style.scss styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maciejryszka/gravit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maciejryszka/gravit/issues"
+  },
+  "homepage": "https://github.com/maciejryszka/gravit#readme",
+  "dependencies": {
+    "sass": "^1.61.0"
+  }
+}
