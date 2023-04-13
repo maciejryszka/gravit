@@ -1,323 +1,207 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gravit</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"
-    />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <img src="./assets/img/logo-gravit.png" alt="logo" class="header__logo" />
-      <h1 class="header__main-heading">gravit</h1>
-      <h2 class="header__sub-heading">medycyna pracy</h2>
-      <nav class="header__navigation">
-        <ul class="header__list">
-          <li class="header__item">
-            <i class="fa-solid fa-laptop-medical"></i>medycyna pracy
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gravit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" />
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css" />
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="./assets/img/logo-gravit.png" alt="logo" class="header__logo" />
+    <h1 class="header__main-heading">gravit</h1>
+    <h2 class="header__sub-heading">medycyna pracy</h2>
+    <nav class="header__navigation">
+      <ul class="header__list">
+        <li class="header__item">
+          <i class="fa-solid fa-laptop-medical"></i>medycyna pracy
+        </li>
+        <li class="header__item">
+          <i class="fa-solid fa-clipboard-list"></i>usługi
+        </li>
+        <li class="header__item">
+          <i class="fa-solid fa-briefcase"></i>dla firm
+        </li>
+        <li class="header__item">
+          <i class="fa-solid fa-phone-volume"></i>kontakt
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="form-redirect">
+      <img src="./assets/img/stethoscope-640.jpg" alt="Backround image: stethoscope, smartphone and glasses"
+        class="form-redirect__background" />
+      <div class="form-redirect__container">
+        <div class="form-redirect__texts">
+          <p class="form-redirect__text">
+            umów wizytę korzystając z formularza kontaktowego
+          </p>
+          <p class="form-redirect__text form-redirect__text--supplementary">
+            skontaktujemy się z tobą i dobierzemy odpowiedni termin
+          </p>
+        </div>
+        <button class="form-redirect__button">formularz</button>
+      </div>
+    </section>
+    <section class="information">
+      <h3 class="information__title">medycyna pracy</h3>
+      <div class="information__container">
+        <p class="information__text information__text--bold">
+          Witamy na stronie internetowej naszej przychodni zajmującej się
+          medycyną pracy!
+        </p>
+        <p class="information__text">
+          Jesteśmy firmą, która działa na rynku od 1995 roku, co pozwoliło nam
+          zdobyć doświadczenie w obsłudze zarówno klientów indywidualnych, jak
+          i firmowych.
+        </p>
+        <p class="information__text">
+          Świadczymy kompleksowe usługi z zakresu medycyny pracy, w tym
+          badania lekarskie dla pracowników.
+        </p>
+        <p class="information__text">
+          Jesteśmy dumni z faktu, że współpracujemy z wieloma innymi
+          instytucjami medycznymi, co pozwala nam na świadczenie usług na
+          najwyższym poziomie.
+        </p>
+        <p class="information__text">
+          Dzięki naszemu doświadczeniu i wysokiej jakości obsługi, zyskaliśmy
+          zaufanie wielu firm z różnych branż.
+        </p>
+        <p class="information__text">
+          Zapraszamy do kontaktu i skorzystania z naszych usług medycznych dla
+          firm oraz klientów indywidualnych. Jesteśmy przekonani, że sprostamy
+          Państwa oczekiwaniom.
+        </p>
+      </div>
+      <div class="information__container">
+        <p class="information__text information__text--title">
+          Godziny pracy
+        </p>
+        <ul class="information__list">
+          <li class="information__list-item">
+            <span class="left-align">Poniedziałek</span>
+            <span class="right-align">08:00 - 15:00</span>
           </li>
-          <li class="header__item">
-            <i class="fa-solid fa-clipboard-list"></i>usługi
+          <li class="information__list-item">
+            <span class="left-align">Wtorek</span>
+            <span class="right-align">08:00 - 15:00</span>
           </li>
-          <li class="header__item">
-            <i class="fa-solid fa-briefcase"></i>dla firm
+          <li class="information__list-item">
+            <span class="left-align">Środa</span>
+            <span class="right-align">08:00 - 15:00</span>
           </li>
-          <li class="header__item">
-            <i class="fa-solid fa-phone-volume"></i>kontakt
+          <li class="information__list-item">
+            <span class="left-align">Czwartek</span>
+            <span class="right-align">08:00 - 15:00</span>
+          </li>
+          <li class="information__list-item">
+            <span class="left-align">Piątek</span>
+            <span class="right-align">08:00 - 15:00</span>
           </li>
         </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="form-redirect">
-        <img
-          src="./assets/img/stethoscope-640.jpg"
-          alt="Backround image: stethoscope, smartphone and glasses"
-          class="form-redirect__background"
-        />
-        <div class="form-redirect__container">
-          <div class="form-redirect__texts">
-            <p class="form-redirect__text">
-              umów wizytę korzystając z formularza kontaktowego
-            </p>
-            <p class="form-redirect__text form-redirect__text--supplementary">
-              skontaktujemy się z tobą i dobierzemy odpowiedni termin
-            </p>
-          </div>
-          <button class="form-redirect__button">formularz</button>
+      </div>
+    </section>
+    <section class="services">
+      <h3 class="services__title">usługi</h3>
+      <ul class="services__list">
+        <li class="services__list-item">
+          <span class="left-align">Badania profilaktyczne pracówników</span>
+          <span class="right-align">od 100 zł</span>
+        </li>
+        <li class="services__list-item">
+          <span class="left-align">Badania do celów sanitarno-epidemiologicznych (książeczki
+            zdrowia)</span>
+          <span class="right-align">od 30 zł</span>
+        </li>
+        <li class="services__list-item">
+          <span class="left-align">Badania wysokościowe</span>
+          <span class="right-align">od 200 zł</span>
+        </li>
+        <li class="services__list-item">
+          <span class="left-align">Badania na prawo jazdy kat. B</span>
+          <span class="right-align">od 200 zł</span>
+        </li>
+        <li class="services__list-item">
+          <span class="left-align">Badania na prawo jazdy kat. C, C+E</span>
+          <span class="right-align">od 200 zł</span>
+        </li>
+        <li class="services__list-item">
+          <span class="left-align">Badania kandydatów na studia oraz do szkół zawodowych</span>
+          <span class="right-align">od 100 zł</span>
+        </li>
+        <li class="services__list-item">
+          <span class="left-align">Szkolenia z zakresu pierwszej pomocy</span>
+          <span class="right-align">od 500 zł</span>
+        </li>
+        <li class="services__list-item">
+          <span class="left-align">Badania psychotechniczne</span>
+          <span class="right-align">od 150 zł</span>
+        </li>
+      </ul>
+    </section>
+    <section class="cooperation">
+      <h3 class="cooperation__title">dla firm</h3>
+      <div class="cooperation__container">
+        <h4 class="cooperation__subtitle">oferta dla firm</h4>
+        <p class="cooperation__text cooperation__text--bold">
+          Firma GRAVIT oferuje kompleksową obsługę firm z zakresu medycyny
+          pracy !
+        </p>
+        <p class="cooperation__text">
+          Nasza firma oferuje szereg badań i usług pozwalającej obsłużyć
+          kompleksowo Państwa firmę. Współpracujemy z placówkami medycznymi
+          tak by wszystko można było załatwić w jednym miejscu. Oferujemy
+          również możliwość przeprowadzenia badań z zakresu medycyny pracy w
+          siedzibach Państwa firmy.
+        </p>
+        <p class="cooperation__text">
+          Współpracujemy również z największymi sieciami prywatnej opieki
+          medycznej:<br />
+          <span class="tab">enel-med</span>,
+          <span class="tab">medicover</span>, <span class="tab">luxmed</span>.
+        </p>
+        <p class="cooperation__text">Zapraszamy do kontaktu i współpracy!</p>
+      </div>
+      <div class="cooperation__container">
+        <h4 class="cooperation__subtitle">referencje</h4>
+        <div class="cooperation__image-wrapper">
+          <a href="" class="cooperation__image-link"><img src="" alt="" class="cooperation__image" /></a>
         </div>
-      </section>
-      <section class="information">
-        <h3 class="information__title">medycyna pracy</h3>
-        <div class="information__container">
-          <p class="information__text information__text--bold">
-            Witamy na stronie internetowej naszej przychodni zajmującej się
-            medycyną pracy!
-          </p>
-          <p class="information__text">
-            Jesteśmy firmą, która działa na rynku od 1995 roku, co pozwoliło nam
-            zdobyć doświadczenie w obsłudze zarówno klientów indywidualnych, jak
-            i firmowych.
-          </p>
-          <p class="information__text">
-            Świadczymy kompleksowe usługi z zakresu medycyny pracy, w tym
-            badania lekarskie dla pracowników.
-          </p>
-          <p class="information__text">
-            Jesteśmy dumni z faktu, że współpracujemy z wieloma innymi
-            instytucjami medycznymi, co pozwala nam na świadczenie usług na
-            najwyższym poziomie.
-          </p>
-          <p class="information__text">
-            Dzięki naszemu doświadczeniu i wysokiej jakości obsługi, zyskaliśmy
-            zaufanie wielu firm z różnych branż.
-          </p>
-          <p class="information__text">
-            Zapraszamy do kontaktu i skorzystania z naszych usług medycznych dla
-            firm oraz klientów indywidualnych. Jesteśmy przekonani, że sprostamy
-            Państwa oczekiwaniom.
-          </p>
+        <div class="cooperation__image-wrapper">
+          <a href="" class="cooperation__image-link"><img src="" alt="" class="cooperation__image" /></a>
         </div>
-        <div class="information__container">
-          <p class="information__text information__text--title">
-            Godziny pracy
-          </p>
-          <ul class="information__list">
-            <li class="information__list-item">
-              <span class="left-align">Poniedziałek</span>
-              <span class="right-align">08:00 - 15:00</span>
-            </li>
-            <li class="information__list-item">
-              <span class="left-align">Wtorek</span>
-              <span class="right-align">08:00 - 15:00</span>
-            </li>
-            <li class="information__list-item">
-              <span class="left-align">Środa</span>
-              <span class="right-align">08:00 - 15:00</span>
-            </li>
-            <li class="information__list-item">
-              <span class="left-align">Czwartek</span>
-              <span class="right-align">08:00 - 15:00</span>
-            </li>
-            <li class="information__list-item">
-              <span class="left-align">Piątek</span>
-              <span class="right-align">08:00 - 15:00</span>
-            </li>
-          </ul>
+      </div>
+      <div class="cooperation__container">
+        <h4 class="cooperation__subtitle">współpracujemy z</h4>
+        <div class="cooperation__logo-wrapper">
+          <img src="" alt="" class="cooperation__logo" />
+          <img src="" alt="" class="cooperation__logo" />
+          <img src="" alt="" class="cooperation__logo" />
+          <img src="" alt="" class="cooperation__logo" />
+          <img src="" alt="" class="cooperation__logo" />
         </div>
-      </section>
-      <section class="services">
-        <h3 class="services__title">usługi</h3>
-        <ul class="services__list">
-          <li class="services__list-item">
-            <span class="left-align">Badania profilaktyczne pracówników</span>
-            <span class="right-align">od 100 zł</span>
-          </li>
-          <li class="services__list-item">
-            <span class="left-align"
-              >Badania do celów sanitarno-epidemiologicznych (książeczki
-              zdrowia)</span
-            >
-            <span class="right-align">od 30 zł</span>
-          </li>
-          <li class="services__list-item">
-            <span class="left-align">Badania wysokościowe</span>
-            <span class="right-align">od 200 zł</span>
-          </li>
-          <li class="services__list-item">
-            <span class="left-align">Badania na prawo jazdy kat. B</span>
-            <span class="right-align">od 200 zł</span>
-          </li>
-          <li class="services__list-item">
-            <span class="left-align">Badania na prawo jazdy kat. C, C+E</span>
-            <span class="right-align">od 200 zł</span>
-          </li>
-          <li class="services__list-item">
-            <span class="left-align"
-              >Badania kandydatów na studia oraz do szkół zawodowych</span
-            >
-            <span class="right-align">od 100 zł</span>
-          </li>
-          <li class="services__list-item">
-            <span class="left-align">Szkolenia z zakresu pierwszej pomocy</span>
-            <span class="right-align">od 500 zł</span>
-          </li>
-          <li class="services__list-item">
-            <span class="left-align">Badania psychotechniczne</span>
-            <span class="right-align">od 150 zł</span>
-          </li>
-        </ul>
-      </section>
-      <section class="cooperation">
-        <h3 class="cooperation__title">dla firm</h3>
-        <div class="cooperation__container">
-          <h4 class="cooperation__subtitle">oferta dla firm</h4>
-          <p class="cooperation__text cooperation__text--bold">
-            Firma GRAVIT oferuje kompleksową obsługę firm z zakresu medycyny
-            pracy !
-          </p>
-          <p class="cooperation__text">
-            Nasza firma oferuje szereg badań i usług pozwalającej obsłużyć
-            kompleksowo Państwa firmę. Współpracujemy z placówkami medycznymi
-            tak by wszystko można było załatwić w jednym miejscu. Oferujemy
-            również możliwość przeprowadzenia badań z zakresu medycyny pracy w
-            siedzibach Państwa firmy.
-          </p>
-          <p class="cooperation__text">
-            Współpracujemy również z największymi sieciami prywatnej opieki
-            medycznej:<br />
-            <span class="tab">enel-med</span>,
-            <span class="tab">medicover</span>, <span class="tab">luxmed</span>.
-          </p>
-          <p class="cooperation__text">Zapraszamy do kontaktu i współpracy!</p>
-        </div>
-        <div class="cooperation__container">
-          <h4 class="cooperation__subtitle">referencje</h4>
-          <div class="cooperation__image-wrapper">
-            <a href="" class="cooperation__image-link"
-              ><img src="" alt="" class="cooperation__image"
-            /></a>
-          </div>
-          <div class="cooperation__image-wrapper">
-            <a href="" class="cooperation__image-link"
-              ><img src="" alt="" class="cooperation__image"
-            /></a>
-          </div>
-        </div>
-        <div class="cooperation__container">
-          <h4 class="cooperation__subtitle">współpracujemy z</h4>
-          <div class="cooperation__logo-wrapper">
-            <img src="" alt="" class="cooperation__logo" />
-            <img src="" alt="" class="cooperation__logo" />
-            <img src="" alt="" class="cooperation__logo" />
-            <img src="" alt="" class="cooperation__logo" />
-            <img src="" alt="" class="cooperation__logo" />
-          </div>
-        </div>
-      </section>
-      <section class="form">
-        <h3 class="form__title">formularz kontaktowy</h3>
-        <form class="form">
-          <label for="name-input" class="form__label"
-            >Name
-            <input
-              type="text"
-              id="name-input"
-              name="name"
-              class="form__input"
-              required
-            />
-          </label>
+      </div>
+    </section>
+    <section class="form">
+      <h3 class="form__title">formularz kontaktowy</h3>
+    </section>
+    <section class="contact">
+      <h3 class="contact__title">kontakt</h3>
+    </section>
+  </main>
+  <footer class="footer"></footer>
+  <script src="./scripts/script.js"></script>
+</body>
 
-          <label for="surname-input" class="form__label"
-            >Surname
-            <input
-              type="text"
-              id="surname-input"
-              name="surname"
-              class="form__input"
-              required
-            />
-          </label>
-
-          <label for="survey-select" class="form__label"
-            >Survey Type
-            <select
-              id="survey-select"
-              name="survey"
-              class="form__select"
-              required
-            >
-              <option value="">Select survey type</option>
-              <option value="customer-satisfaction">
-                Customer Satisfaction
-              </option>
-              <option value="product-feedback">Product Feedback</option>
-              <option value="market-research">Market Research</option>
-            </select>
-          </label>
-
-          <label for="date-input" class="form__label"
-            >Preferred Date
-            <input
-              type="date"
-              id="date-input"
-              name="date"
-              class="form__input"
-              required
-            />
-          </label>
-
-          <label for="contact-select" class="form__label"
-            >Preferred Contact
-            <select
-              id="contact-select"
-              name="contact"
-              class="form__select"
-              required
-            >
-              <option value="">Select preferred contact method</option>
-              <option value="phone">Phone</option>
-              <option value="email">Email</option>
-            </select>
-          </label>
-
-          <label for="phone-input" class="form__label form__label--phone"
-            >Phone Number
-            <input
-              type="tel"
-              id="phone-input"
-              name="phone"
-              class="form__input"
-              required
-            />
-          </label>
-
-          <label for="email-input" class="form__label form__label--email"
-            >Email Address
-            <input
-              type="email"
-              id="email-input"
-              name="email"
-              class="form__input"
-              required
-            />
-          </label>
-
-          <label for="message-input" class="form__label"
-            >Message
-            <textarea
-              id="message-input"
-              name="message"
-              class="form__textarea"
-            ></textarea>
-          </label>
-
-          <button type="submit" class="form__button">Submit</button>
-        </form>
-      </section>
-      <section class="contact">
-        <h3 class="contact__title">kontakt</h3>
-      </section>
-    </main>
-    <footer class="footer"></footer>
-    <script src="./scripts/script.js"></script>
-  </body>
 </html>
