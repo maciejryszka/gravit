@@ -9,13 +9,17 @@ const phoneInput = document.querySelector(".form__input--phone");
 preferredContact.addEventListener("change", () => {
   if (preferredContact.value === "Telefon") {
     emailLabel.style.display = "none";
+    emailInput.style.display = "none";
     emailInput.removeAttribute("required");
-    phoneLabel.style.display = "inline";
+    phoneLabel.style.display = "block";
+    phoneInput.style.display = "block";
     phoneInput.setAttribute("required", "");
   } else if (preferredContact.value === "Email") {
     phoneLabel.style.display = "none";
+    phoneInput.style.display = "none";
     phoneInput.removeAttribute("required");
-    emailLabel.style.display = "inline";
+    emailLabel.style.display = "block";
+    emailInput.style.display = "block";
     emailInput.setAttribute("required", "");
   }
 });

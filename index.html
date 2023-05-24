@@ -13,34 +13,36 @@
   <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css" />
   <link rel="stylesheet" href="./styles/normalize.css" />
   <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/cssbox.css">
 </head>
 
 <body>
   <header class="header">
-    <img src="./assets/img/logo-gravit.png" alt="logo" class="header__logo" />
-    <h1 class="header__main-heading">gravit</h1>
-    <h2 class="header__sub-heading">medycyna pracy</h2>
+    <div class="header__container">
+      <img src="./assets/img/logo/logo-gravit.png" alt="logo" class="header__logo" />
+      <h1 class="header__main-heading">gravit</h1>
+      <h2 class="header__sub-heading">medycyna pracy</h2>
+    </div>
     <nav class="header__navigation">
       <ul class="header__list">
         <li class="header__item">
-          <i class="fa-solid fa-laptop-medical"></i>medycyna pracy
+          <a href="#information" class="header__link"><i class="fa-solid fa-laptop-medical header__icon"></i>medycyna
+            pracy</a>
         </li>
         <li class="header__item">
-          <i class="fa-solid fa-clipboard-list"></i>usługi
+          <a href="#services" class="header__link"><i class="fa-solid fa-clipboard-list header__icon"></i>usługi</a>
         </li>
         <li class="header__item">
-          <i class="fa-solid fa-briefcase"></i>dla firm
+          <a href="#cooperation" class="header__link"><i class="fa-solid fa-briefcase header__icon"></i>dla firm</a>
         </li>
         <li class="header__item">
-          <i class="fa-solid fa-phone-volume"></i>kontakt
+          <a href="#contact" class="header__link"><i class="fa-solid fa-phone-volume header__icon"></i>kontakt</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main">
     <section class="form-redirect">
-      <img src="./assets/img/stethoscope-640.jpg" alt="Backround image: stethoscope, smartphone and glasses"
-        class="form-redirect__background" />
       <div class="form-redirect__container">
         <div class="form-redirect__texts">
           <p class="form-redirect__text">
@@ -50,222 +52,249 @@
             skontaktujemy się z tobą i dobierzemy odpowiedni termin
           </p>
         </div>
-        <button class="form-redirect__button">formularz</button>
+        <a href="#form" class="form-redirect__button-link">formularz</a>
       </div>
     </section>
-    <section class="information">
+    <section id="information" class="information">
       <h3 class="information__title">medycyna pracy</h3>
       <div class="information__container">
-        <p class="information__text information__text--bold">
-          Witamy na stronie internetowej naszej przychodni zajmującej się
-          medycyną pracy!
-        </p>
-        <p class="information__text">
-          Jesteśmy firmą, która działa na rynku od 1995 roku, co pozwoliło nam
-          zdobyć doświadczenie w obsłudze zarówno klientów indywidualnych, jak
-          i firmowych.
-        </p>
-        <p class="information__text">
-          Świadczymy kompleksowe usługi z zakresu medycyny pracy, w tym
-          badania lekarskie dla pracowników.
-        </p>
-        <p class="information__text">
-          Jesteśmy dumni z faktu, że współpracujemy z wieloma innymi
-          instytucjami medycznymi, co pozwala nam na świadczenie usług na
-          najwyższym poziomie.
-        </p>
-        <p class="information__text">
-          Dzięki naszemu doświadczeniu i wysokiej jakości obsługi, zyskaliśmy
-          zaufanie wielu firm z różnych branż.
-        </p>
-        <p class="information__text">
-          Zapraszamy do kontaktu i skorzystania z naszych usług medycznych dla
-          firm oraz klientów indywidualnych. Jesteśmy przekonani, że sprostamy
-          Państwa oczekiwaniom.
-        </p>
-      </div>
-      <div class="information__container">
-        <p class="information__text information__text--title">
-          Godziny pracy
-        </p>
-        <ul class="information__list">
-          <li class="information__list-item">
-            <span class="left-align">Poniedziałek</span>
-            <span class="right-align">08:00 - 15:00</span>
-          </li>
-          <li class="information__list-item">
-            <span class="left-align">Wtorek</span>
-            <span class="right-align">08:00 - 15:00</span>
-          </li>
-          <li class="information__list-item">
-            <span class="left-align">Środa</span>
-            <span class="right-align">08:00 - 15:00</span>
-          </li>
-          <li class="information__list-item">
-            <span class="left-align">Czwartek</span>
-            <span class="right-align">08:00 - 15:00</span>
-          </li>
-          <li class="information__list-item">
-            <span class="left-align">Piątek</span>
-            <span class="right-align">08:00 - 15:00</span>
-          </li>
-        </ul>
+        <div class="information__texts">
+          <p class="information__text information__text--bold">
+            Witamy na stronie internetowej naszej przychodni zajmującej się
+            medycyną pracy!
+          </p>
+          <p class="information__text">
+            Jesteśmy firmą, która działa na rynku od 1995 roku, co pozwoliło nam
+            zdobyć doświadczenie w obsłudze zarówno klientów indywidualnych, jak
+            i firmowych.
+          </p>
+          <p class="information__text">
+            Świadczymy kompleksowe usługi z zakresu medycyny pracy, w tym
+            badania lekarskie dla pracowników.
+          </p>
+          <p class="information__text">
+            Jesteśmy dumni z faktu, że współpracujemy z wieloma innymi
+            instytucjami medycznymi, co pozwala nam na świadczenie usług na
+            najwyższym poziomie.
+          </p>
+          <p class="information__text">
+            Dzięki naszemu doświadczeniu i wysokiej jakości obsługi, zyskaliśmy
+            zaufanie wielu firm z różnych branż.
+          </p>
+          <p class="information__text">
+            Zapraszamy do kontaktu i skorzystania z naszych usług medycznych dla
+            firm oraz klientów indywidualnych. Jesteśmy przekonani, że sprostamy
+            Państwa oczekiwaniom.
+          </p>
+        </div>
+        <div class="information__working-hours">
+          <p class="information__text information__text--title">
+            <i class="fa-solid fa-clock information__icon"></i></i>Godziny pracy
+          </p>
+          <ul class="information__list">
+            <li class="information__list-item">
+              <span>Poniedziałek</span>
+              <span>08:00 - 15:00</span>
+            </li>
+            <li class="information__list-item">
+              <span>Wtorek</span>
+              <span>08:00 - 15:00</span>
+            </li>
+            <li class="information__list-item">
+              <span>Środa</span>
+              <span>08:00 - 15:00</span>
+            </li>
+            <li class="information__list-item">
+              <span>Czwartek</span>
+              <span>08:00 - 15:00</span>
+            </li>
+            <li class="information__list-item">
+              <span>Piątek</span>
+              <span>08:00 - 15:00</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
       <h3 class="services__title">usługi</h3>
       <ul class="services__list">
         <li class="services__list-item">
-          <span class="left-align">Badania profilaktyczne pracówników</span>
-          <span class="right-align">od 100 zł</span>
+          <span>Badania profilaktyczne pracówników</span>
+          <span class="services__price">od 100 zł</span>
         </li>
         <li class="services__list-item">
-          <span class="left-align">Badania do celów sanitarno-epidemiologicznych (książeczki
+          <span>Badania do celów sanitarno-epidemiologicznych (książeczki
             zdrowia)</span>
-          <span class="right-align">od 30 zł</span>
+          <span class="services__price">od 30 zł</span>
         </li>
         <li class="services__list-item">
-          <span class="left-align">Badania wysokościowe</span>
-          <span class="right-align">od 200 zł</span>
+          <span>Badania wysokościowe</span>
+          <span class="services__price">od 200 zł</span>
         </li>
         <li class="services__list-item">
-          <span class="left-align">Badania na prawo jazdy kat. B</span>
-          <span class="right-align">od 200 zł</span>
+          <span>Badania na prawo jazdy kat. B</span>
+          <span class="services__price">od 200 zł</span>
         </li>
         <li class="services__list-item">
-          <span class="left-align">Badania na prawo jazdy kat. C, C+E</span>
-          <span class="right-align">od 200 zł</span>
+          <span>Badania na prawo jazdy kat. C, C+E</span>
+          <span class="services__price">od 200 zł</span>
         </li>
         <li class="services__list-item">
-          <span class="left-align">Badania kandydatów na studia oraz do szkół zawodowych</span>
-          <span class="right-align">od 100 zł</span>
+          <span>Badania kandydatów na studia oraz do szkół zawodowych</span>
+          <span class="services__price">od 100 zł</span>
         </li>
         <li class="services__list-item">
-          <span class="left-align">Szkolenia z zakresu pierwszej pomocy</span>
-          <span class="right-align">od 500 zł</span>
+          <span>Szkolenia z zakresu pierwszej pomocy</span>
+          <span class="services__price">od 500 zł</span>
         </li>
         <li class="services__list-item">
-          <span class="left-align">Badania psychotechniczne</span>
-          <span class="right-align">od 150 zł</span>
+          <span>Badania psychotechniczne</span>
+          <span class="services__price">od 150 zł</span>
         </li>
       </ul>
     </section>
-    <section class="cooperation">
+    <section id="cooperation" class="cooperation">
       <h3 class="cooperation__title">dla firm</h3>
       <div class="cooperation__container">
-        <h4 class="cooperation__subtitle">oferta dla firm</h4>
-        <p class="cooperation__text cooperation__text--bold">
-          Firma GRAVIT oferuje kompleksową obsługę firm z zakresu medycyny
-          pracy !
-        </p>
-        <p class="cooperation__text">
-          Nasza firma oferuje szereg badań i usług pozwalającej obsłużyć
-          kompleksowo Państwa firmę. Współpracujemy z placówkami medycznymi
-          tak by wszystko można było załatwić w jednym miejscu. Oferujemy
-          również możliwość przeprowadzenia badań z zakresu medycyny pracy w
-          siedzibach Państwa firmy.
-        </p>
-        <p class="cooperation__text">
-          Współpracujemy również z największymi sieciami prywatnej opieki
-          medycznej:<br />
-          <span class="tab">enel-med</span>,
-          <span class="tab">medicover</span>, <span class="tab">luxmed</span>.
-        </p>
-        <p class="cooperation__text">Zapraszamy do kontaktu i współpracy!</p>
-      </div>
-      <div class="cooperation__container">
-        <h4 class="cooperation__subtitle">referencje</h4>
-        <div class="cooperation__image-wrapper">
-          <a href="" class="cooperation__image-link"><img src="" alt="" class="cooperation__image" /></a>
+        <div class="cooperation__horizontal-container">
+          <div class="cooperation__offer">
+            <h4 class="cooperation__subtitle">oferta dla firm</h4>
+            <p class="cooperation__text cooperation__text--bold">
+              Firma GRAVIT oferuje kompleksową obsługę firm z zakresu medycyny
+              pracy !
+            </p>
+            <p class="cooperation__text">
+              Nasza firma oferuje szereg badań i usług pozwalającej obsłużyć
+              kompleksowo Państwa firmę. Współpracujemy z placówkami medycznymi
+              tak by wszystko można było załatwić w jednym miejscu. Oferujemy
+              również możliwość przeprowadzenia badań z zakresu medycyny pracy w
+              siedzibach Państwa firmy.
+            </p>
+            <p class="cooperation__text">
+              Współpracujemy również z największymi sieciami prywatnej opieki
+              medycznej:<br />
+              <span class="tab">enel-med</span>,
+              <span class="tab">medicover</span>, <span class="tab">luxmed</span>.
+            </p>
+            <p class="cooperation__text">Zapraszamy do kontaktu i współpracy!</p>
+          </div>
+          <div class="cooperation__references">
+            <h4 class="cooperation__subtitle">referencje</h4>
+            <div class="cooperation__images-wrapper">
+              <div class="cssbox">
+                <a id="image1" href="#image1">
+                  <img class="cssbox_thumb" src="./assets/img/recommendations/granit-thumbnail.jpg">
+                  <span class="cssbox_full">
+                    <img src="./assets/img/recommendations/granit.jpg">
+                  </span>
+                </a>
+                <a class="cssbox_close" href="#void"></a>
+                <a class="cssbox_next" href="#image2">&gt;</a>
+              </div>
+              <div class="cssbox">
+                <a id="image2" href="#image2">
+                  <img class="cssbox_thumb" src="./assets/img/recommendations/zuk-thumbnail.jpg">
+                  <span class="cssbox_full">
+                    <img src="./assets/img/recommendations/zuk.jpg">
+                  </span>
+                </a>
+                <a class="cssbox_close" href="#void"></a>
+                <a class="cssbox_prev" href="#image1">&lt;</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="cooperation__image-wrapper">
-          <a href="" class="cooperation__image-link"><img src="" alt="" class="cooperation__image" /></a>
-        </div>
-      </div>
-      <div class="cooperation__container">
-        <h4 class="cooperation__subtitle">współpracujemy z</h4>
-        <div class="cooperation__logo-wrapper">
-          <img src="" alt="" class="cooperation__logo" />
-          <img src="" alt="" class="cooperation__logo" />
-          <img src="" alt="" class="cooperation__logo" />
-          <img src="" alt="" class="cooperation__logo" />
-          <img src="" alt="" class="cooperation__logo" />
+        <div class="cooperation__cooperators">
+          <h4 class="cooperation__subtitle">współpracujemy z</h4>
+          <div class="cooperation__logos-wrapper">
+            <div class="cooperation__logo-wrapper">
+              <img src="./assets/img/cooperators/medicover-1.png" alt="" class="cooperation__logo" />
+            </div>
+            <div class="cooperation__logo-wrapper">
+              <img src="./assets/img/cooperators/enel-med.png" alt="" class="cooperation__logo" />
+            </div>
+            <div class="cooperation__logo-wrapper">
+              <img src="./assets/img/cooperators/luxmed.png" alt="" class="cooperation__logo" />
+            </div>
+            <div class="cooperation__logo-wrapper">
+              <img src="./assets/img/cooperators/diagnostyka.jpg" alt="" class="cooperation__logo" />
+            </div>
+            <div class="cooperation__logo-wrapper">
+              <img src="./assets/img/cooperators/ap_pracownia_psychologiczna.jpg" alt="" class="cooperation__logo" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="form">
+    <section id="form" class="form">
       <h3 class="form__title">formularz kontaktowy</h3>
-      <form action="https://formsubmit.co/maciejryszka@gmail.com" method="POST"> <!--CHANGE! -->
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html"> <!--CHANGE! -->
-        <input type="hidden" name="_subject" value="Zgłoszenie z formularza">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="box">
-        <label class="form__label">
-          Imię:
-          <input class="form__input" type="text" id="first-name" name="Imię" />
-        </label>
-        <br /><br />
-        <label class="form__label">
-          Nazwisko:
-          <input class="form__input" type="text" id="last-name" name="Nazwisko" />
-        </label>
-        <br /><br />
-        <label class="form__label" for="examination-type">
-          Rodzaj badania:
-          <select class="form__select" id="examination-type" name="Rodzaj badania">
-            <option class="form__option" value="Profilaktyczne">Profilaktyczne</option>
-            <option class="form__option" value="Sanitarno-epidemiologiczne">Sanitarno-epidemiologiczne</option>
-            <option class="form__option" value="Kierowca kategorii B">Kierowca kategorii B</option>
-            <option class="form__option" value="Kierowca zawodowy">Kierowca zawodowy</option>
-            <option class="form__option" value="Do szkoły">Do szkoły</option>
-            <option class="form__option" value="Psychotechniczne">Psychotechniczne</option>
-            <option class="form__option" value="Inne">Inne</option>
-          </select>
-        </label>
-        <br /><br />
-        <label class="form__label">
-          Pracodawca:
-          <input class="form__input" type="text" id="employer" name="Pracodawca" />
-        </label>
-        <br /><br />
-        <label class="form__label">
-          Preferowany termin:
-          <input class="form__input" type="date" id="preferred-date" name="Preferowany termin" />
-        </label>
-        <br /><br />
-        <label class="form__label" for="preferred-contact">
-          Preferowana forma kontaktu:
-          <select class="form__select form__select--preferred-contact" id="preferred-contact"
-            name="Preferowana forma kontaktu">
-            <option class="form__option" value="Email">E-mail</option>
-            <option class="form__option" value="Telefon">Telefon</option>
-          </select>
-        </label>
-        <br /><br />
-        <label class="form__label form__label--email">
-          E-mail:
-          <input class="form__input form__input--email" type="email" id="email" name="E-mail" required />
-        </label>
-        <label class="form__label form__label--phone" style="display:none">
-          Telefon:
-          <input class="form__input form__input--phone" type="tel" id="phone" name="Telefon" />
-        </label>
-        <br /><br />
-        <label class="form__label" for="additional-info">
-          Uwagi:
-          <textarea class="form__textarea" id="additional-information" name="Uwagi"></textarea>
-        </label>
-        <br /><br />
-        <label class="form__label">
-          <input class="form__input" type="checkbox" name="Akceptacja regulaminu i polityki prywatności" required />
-          Oświadczam, że zapoznałem się z regulaminem oraz polityką prywatności i akceptuje postanowienia tych
-          dokumentów.
-        </label>
-        <br /><br />
-        <button class="form__button" type="submit">Wyślij</button>
-      </form>
+      <div class="form__container">
+        <form action="https://formsubmit.co/maciejryszka@gmail.com" method="POST"> <!--CHANGE! -->
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html"> <!--CHANGE! -->
+          <input type="hidden" name="_subject" value="Zgłoszenie z formularza">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="box">
+          <div class="form__inputs-container">
+            <div class="form__group">
+              <label class="form__label">Imię:</label>
+              <input class="form__input" type="text" id="first-name" name="Imię" />
+            </div>
+            <div class="form__group">
+              <label class="form__label">Nazwisko:</label>
+              <input class="form__input" type="text" id="last-name" name="Nazwisko" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="examination-type">Rodzaj badania:</label>
+              <select class="form__select" id="examination-type" name="Rodzaj badania">
+                <option class="form__option" value="Profilaktyczne">Profilaktyczne</option>
+                <option class="form__option" value="Sanitarno-epidemiologiczne">Sanitarno-epidemiologiczne</option>
+                <option class="form__option" value="Kierowca kategorii B">Kierowca kategorii B</option>
+                <option class="form__option" value="Kierowca zawodowy">Kierowca zawodowy</option>
+                <option class="form__option" value="Do szkoły">Do szkoły</option>
+                <option class="form__option" value="Psychotechniczne">Psychotechniczne</option>
+                <option class="form__option" value="Inne">Inne</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label">Pracodawca:</label>
+              <input class="form__input" type="text" id="employer" name="Pracodawca" />
+            </div>
+            <div class="form__group">
+              <label class="form__label">Preferowany termin:</label>
+              <input class="form__input" type="date" id="preferred-date" name="Preferowany termin" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="preferred-contact">Preferowana forma kontaktu:</label>
+              <select class="form__select form__select--preferred-contact" id="preferred-contact"
+                name="Preferowana forma kontaktu">
+                <option class="form__option" value="Email">E-mail</option>
+                <option class="form__option" value="Telefon">Telefon</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label form__label--email">E-mail:</label>
+              <input class="form__input form__input--email" type="email" id="email" name="E-mail" required />
+              <label class="form__label form__label--phone" style="display:none">Telefon:</label>
+              <input class="form__input form__input--phone" style="display:none" type="tel" id="phone" name="Telefon" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="additional-info">Uwagi:</label>
+              <textarea class="form__textarea" id="additional-information" name="Uwagi"></textarea>
+            </div>
+            <div class="form__group pyto form__group--regulations">
+              <input class="form__input" type="checkbox" name="Akceptacja regulaminu i polityki prywatności" required />
+              <label class="form__label">Oświadczam, że zapoznałem się z regulaminem oraz polityką prywatności i
+                akceptuje
+                postanowienia tych
+                dokumentów.</label>
+            </div>
+          </div>
+          <button class="form__button" type="submit">Wyślij</button>
+        </form>
+      </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <h3 class="contact__title">kontakt</h3>
       <div class="contact__container">
         <h4 class="contact__subtitle">dane kontaktowe</h4>
@@ -297,9 +326,44 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__container"></div>
-    <div class="footer__container"></div>
-    <div class="footer__container"></div>
+    <div class="footer__container">
+      <img src="./assets/img/logo/logo-gravit.png" alt="logo" class="footer__logo" />
+    </div>
+    <div class="footer__container">
+      <p class="hours__title">
+        Godziny pracy
+      </p>
+      <ul class="hours__list">
+        <li class="hours__list-item">
+          <span class="left-align">Poniedziałek</span>
+          <span class="right-align">08:00 - 15:00</span>
+        </li>
+        <li class="hours__list-item">
+          <span class="left-align">Wtorek</span>
+          <span class="right-align">08:00 - 15:00</span>
+        </li>
+        <li class="hours__list-item">
+          <span class="left-align">Środa</span>
+          <span class="right-align">08:00 - 15:00</span>
+        </li>
+        <li class="hours__list-item">
+          <span class="left-align">Czwartek</span>
+          <span class="right-align">08:00 - 15:00</span>
+        </li>
+        <li class="hours__list-item">
+          <span class="left-align">Piątek</span>
+          <span class="right-align">08:00 - 15:00</span>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__container">
+      <p class="footer__text footer__text--title">
+        Zadbaj o bezpieczeństwo swoich pracowników, z nami to proste!
+      </p>
+      <p class="footer__text">
+        Współpracujemy z firmami od prawie 30 lat - zaufaj naszemu doświadczeniu
+      </p>
+    </div>
   </footer>
   <script src="./scripts/script.js"></script>
 </body>

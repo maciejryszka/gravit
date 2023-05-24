@@ -1,6 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
 body {
   color: #3b4650;
   font-family: "Montserrat", sans-serif;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px auto;
+}
+.header__logo {
+  width: 300px;
+}
+.header__main-heading {
+  margin: 0 -0.5rem 0 0;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.header__sub-heading {
+  margin: 0 -0.25rem 0 0;
+  letter-spacing: 0.25rem;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.header__list {
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid #3b4650;
+  font-size: 1.5rem;
+  list-style: none;
+  text-transform: uppercase;
+}
+.header__item {
+  width: 25%;
+  line-height: 50px;
+  text-align: center;
+}
+.header__link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #3b4650;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.header__link:hover {
+  color: #fff;
+  background-color: #3b4650;
+}
+.header__icon {
+  margin-right: 15px;
+}
+
+.form-redirect__container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/img/background/stethoscope-1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.form-redirect__texts {
+  width: 50%;
+  height: 30%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.7490196078);
+}
+.form-redirect__text {
+  font-size: 1.6rem;
+}
+.form-redirect__text--supplementary {
+  font-size: 1.2rem;
+}
+.form-redirect__button-link {
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: 2px solid #3b4650;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fff;
+  color: #3b4650;
+}
+
+.information__title,
+.services__title,
+.cooperation__title,
+.form__title,
+.contact__title {
+  height: 80px;
+  line-height: 80px;
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #3b4650;
+  color: #fff;
+}
+
+.information__container {
+  margin: 60px 120px;
+  display: flex;
+}
+.information__texts {
+  width: 50%;
+  padding: 0 100px;
+  border-right: 1px solid #3b4650;
+}
+.information__text {
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.information__text--bold {
+  font-weight: bold;
+}
+.information__text--title {
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.information__working-hours {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #3b4650;
+  text-align: center;
+}
+.information__icon {
+  margin-right: 15px;
+}
+.information__list {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.information__list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.services__list {
+  width: 50%;
+  margin: 60px auto;
+  font-size: 1.2rem;
+}
+.services__list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.services__price {
+  font-weight: bold;
+}
+
+.cooperation__container {
+  margin: 60px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cooperation__horizontal-container {
+  display: flex;
+}
+.cooperation__subtitle {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.cooperation__offer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 100px;
+  border-right: 1px solid #3b4650;
+}
+.cooperation__text {
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.cooperation__text--bold {
+  font-weight: bold;
+}
+.cooperation__references {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 100px;
+  border-left: 1px solid #3b4650;
+}
+.cooperation__images-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.cooperation__cooperators {
+  width: 100%;
+  margin-top: 60px;
+  padding: 60px 100px 0;
+  border-top: 2px solid #3b4650;
+}
+.cooperation__logos-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.cooperation__logo-wrapper {
+  text-align: center;
+}
+.cooperation__logo {
+  height: 100px;
+}
+
+.cssbox_thumb {
+  border: 2px solid #000;
+}
+
+.form__container {
+  width: 30%;
+  margin: 60px auto;
+  padding: 60px 30px;
+  text-align: left;
+  background-color: #3b4650;
+  color: #fff;
+}
+.form__inputs-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+.form__group--regulations {
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */
