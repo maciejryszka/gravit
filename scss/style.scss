@@ -10,6 +10,9 @@ $myFont: "Montserrat", sans-serif;
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  @media screen and (orientation: landscape) and (max-width: 1366px) {
+    font-size: 13px;
+  }
 }
 
 body {
@@ -45,6 +48,8 @@ body {
   }
 
   &__list {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     border-top: 2px solid $myColor;
@@ -90,37 +95,46 @@ body {
   }
 
   &__texts {
-    width: 50%;
-    height: 30%;
+    width: 58%;
+    height: 35%;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 10px;
     text-transform: uppercase;
     background-color: #ffffffbf;
+    @media screen and (orientation: landscape) and (max-width: 1366px) {
+      width: 62%;
+    }
   }
 
   &__text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     &--supplementary {
-      font-size: 1.2rem;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
   }
 
   &__button-link {
     display: block;
-    width: 150px;
-    height: 40px;
-    border: 2px solid $myColor;
-    line-height: 40px;
+    width: 200px;
+    height: 60px;
+    border: 1px solid #fff;
+    line-height: 60px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #fff;
-    color: $myColor;
+    background-color: $myColor;
+    color: #fff;
+    font-size: 1.25rem;
+    box-shadow: 2px -2px 5px 0px #8080804d;
   }
 }
 
@@ -132,7 +146,7 @@ body {
   height: 80px;
   line-height: 80px;
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   background-color: $myColor;
@@ -149,6 +163,9 @@ body {
     width: 50%;
     padding: 0 100px;
     border-right: 1px solid $myColor;
+    @media screen and (orientation: landscape) and (max-width: 1366px) {
+      padding: 0 20px;
+    }
   }
 
   &__text {
@@ -169,7 +186,7 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     border-left: 1px solid $myColor;
     text-align: center;
   }
@@ -180,7 +197,7 @@ body {
 
   &__list {
     width: 50%;
-    margin: 0 auto;
+    margin: 80px auto 0;
     font-size: 1.2rem;
   }
 
@@ -197,12 +214,20 @@ body {
     width: 50%;
     margin: 60px auto;
     font-size: 1.2rem;
+    @media screen and (orientation: landscape) and (max-width: 1366px) {
+      width: 60%;
+    }
   }
 
   &__list-item {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    &--note {
+      padding: 20px 20px 0;
+      font-size: 0.75rem;
+      text-align: justify;
+    }
   }
 
   &__price {
@@ -227,6 +252,11 @@ body {
     text-align: center;
     font-size: 1.6rem;
     text-transform: uppercase;
+    &--cooperators {
+      @media screen and (orientation: landscape) and (max-width: 1366px) {
+        padding-bottom: 40px;
+      }
+    }
   }
 
   &__offer {
@@ -254,6 +284,9 @@ body {
     justify-content: space-between;
     padding: 0 100px;
     border-left: 1px solid $myColor;
+    @media screen and (orientation: landscape) and (max-width: 1366px) {
+      padding: 0 60px;
+    }
   }
 
   &__images-wrapper {
@@ -264,13 +297,23 @@ body {
   &__cooperators {
     width: 100%;
     margin-top: 60px;
-    padding: 60px 100px 0;
+    padding: 60px 60px 0;
     border-top: 2px solid $myColor;
+    @media screen and (orientation: landscape) and (max-width: 1366px) {
+      padding: 40px 60px 0;
+    }
   }
 
   &__logos-wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (orientation: landscape) and (max-width: 1366px) {
+      max-width: 1300px;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
   }
 
   &__logo-wrapper {
@@ -278,12 +321,15 @@ body {
   }
 
   &__logo {
-    height: 100px;
+    height: 80px;
   }
 }
 
 .cssbox_thumb {
   border: 2px solid #000;
+  @media screen and (orientation: landscape) and (max-width: 1366px) {
+    width: 180px;
+  }
 }
 
 .form {
@@ -294,10 +340,13 @@ body {
     text-align: left;
     background-color: $myColor;
     color: #fff;
+    @media screen and (orientation: landscape) and (max-width: 1366px) {
+      padding: 30px 15px;
+    }
   }
 
   &__inputs-container {
-    height: 600px;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -306,8 +355,192 @@ body {
   &__group {
     display: flex;
     flex-direction: column;
+    margin: 10px;
+
+    & > input,
+    & > select {
+      padding: 5px;
+    }
+
     &--regulations {
       flex-direction: row;
     }
   }
+
+  &__input {
+    &--regulations {
+      margin-right: 20px;
+    }
+  }
+
+  &__textarea {
+    padding: 10px;
+    height: 100px;
+    resize: none;
+  }
+
+  &__button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+}
+
+.contact {
+  &__container {
+    height: 400px;
+    display: flex;
+    margin: 60px 120px;
+  }
+  &__details,
+  &__map {
+    width: 50%;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid $myColor;
+  }
+
+  &__details-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  &__list {
+    font-size: 1.2rem;
+    list-style: none;
+    width: fit-content;
+    &-item {
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+
+  &__icon {
+    margin-right: 15px;
+  }
+
+  &__map {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid $myColor;
+    text-align: center;
+    &-frame {
+      flex-grow: 1;
+      margin: 0 auto;
+      border: 2px solid $myColor;
+      border-radius: 10px;
+      box-shadow: 2px -2px 5px 0px #8080804d;
+      @media screen and (orientation: landscape) and (max-width: 1366px) {
+        width: 500px;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 150px;
+  padding: 0 120px;
+  display: flex;
+  color: #fff;
+  background-color: $myColor;
+
+  &__container {
+    height: 100%;
+    text-align: center;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 25%;
+    }
+
+    &:nth-child(1) {
+      padding-left: 100px;
+      @media screen and (orientation: landscape) and (max-width: 1366px) {
+        padding-left: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      padding-right: 100px;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 1px solid $myColor;
+      text-align: center;
+      @media screen and (orientation: landscape) and (max-width: 1366px) {
+        padding-right: 0px;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 50%;
+      margin: 0 auto;
+      padding: 15px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.3rem;
+      @media screen and (orientation: landscape) and (max-width: 1366px) {
+        padding: 15px 25px;
+      }
+    }
+  }
+
+  &__logo {
+    margin: 22px 0;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    &--title {
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.hours {
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__list {
+    font-size: 0.8rem;
+    width: 60%;
+    margin: 10px auto;
+    list-style: none;
+    &-item {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.inside {
+  display: inline-block;
+  text-align: right;
+  width: 70px;
+  padding-left: 10px;
 }
